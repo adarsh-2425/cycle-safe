@@ -40,5 +40,3 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on ${PORT}`)
 });
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGU1YTcwZmU3Nzc3NTRkNWMyNzIyZTYiLCJpYXQiOjE2OTI3ODk2MDJ9.VPrRTS0MVGMrc64r3N6esQW7fy70qhyX5l6KZnGLJsM
