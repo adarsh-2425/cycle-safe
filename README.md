@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Cycling Safe SOS App is designed to provide safety features for cyclists, allowing them to send SOS messages and mark themselves as safe. The backend of the app is built using Node.js, Express, MongoDB, Twilio for SMS functionality and NodeMailer for email functionality.
+The Cycling Safe SOS App is designed to provide safety features for cyclists, allowing them to send SOS messages and handcrafted 'im safe' messages to their favorite people. The backend of the app is built using Node.js, Express, MongoDB, Twilio for SMS functionality and NodeMailer for email functionality.
 
 ## Features
 
