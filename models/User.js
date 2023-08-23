@@ -25,7 +25,17 @@ const UserSchema = new mongoose.Schema({
     phoneNumber: String
   }],
   customMessages: [{
-    title: String,
+    name: {
+      type: String,
+    },
+    relationship: {
+      type: String,
+      lowercase: true
+    },
+    email: {
+      type: String,
+      lowercase: true
+    },
     content: String
   }]
 });

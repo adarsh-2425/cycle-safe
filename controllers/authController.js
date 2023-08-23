@@ -1,7 +1,6 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
-const authMiddleware = require('../middlewares/authMiddleware');
 const transporter = require('../middlewares/emailMiddleware');
 
 //signup
@@ -72,7 +71,7 @@ exports.signin = async (req, res) => {
       return res.status(404).send('Password is wrong');
     }
 
-    const token = jwt.sign({userId: user._id}, 'secret');
+    const token = jwt.sign({_id: user._id}, 'secret');
 
     return res.status(200).json({token, user: {name: user.name, email: user.email}});
     
