@@ -16,12 +16,12 @@ const transporter = nodemailer.createTransport({
 });
 
 //signup success mail
-exports.signupSuccess = (email) => {
+exports.signupSuccess = (name, email) => {
   const mailOptions = {
     from: '"Cycle Safe" <' + process.env.email + '>',
     to: email,
     subject: "Account Created Successfully",
-    text: `Welcome to Cycle Safe. Empowering Cyclists with SOS and Peace of Mind.`
+    text: `Hi ${name}. Welcome to Cycle Safe. Lets empower you with SOS and Peace of Mind.`
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
