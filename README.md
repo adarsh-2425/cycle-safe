@@ -1,13 +1,13 @@
-# Cycling SOS App Documentation
+# Cycling Safe SOS App Documentation
 
 ## Overview
 
-The Cycling SOS App is designed to provide safety features for cyclists, allowing them to send SOS messages and mark themselves as safe. The backend of the app is built using Node.js, Express, MongoDB, and Twilio for SMS functionality.
+The Cycling Safe SOS App is designed to provide safety features for cyclists, allowing them to send SOS messages and mark themselves as safe. The backend of the app is built using Node.js, Express, MongoDB, Twilio for SMS functionality and NodeMailer for email functionality.
 
 ## Features
 
 1. Send SOS with predefined message as text message using Twilio.
-2. "I'm Safe" button to mark the user as safe and send custom emails.
+2. "I'm Safe" api to send handcrafted emails to your favorite people.
 3. User authentication and authorization using JWT.
 4. User registration and login with bcrypt for password hashing.
 5. Ability to update user information and manage custom messages.
@@ -17,15 +17,15 @@ The Cycling SOS App is designed to provide safety features for cyclists, allowin
 ### Authentication Routes
 
 - `POST /api/signup`: Register a new user.
-- `POST /api/login`: Authenticate user and generate JWT token.
+- `POST /api/signin`: Authenticate user and generate JWT token.
 
 ### User Routes
 
-- `GET /api/users/id/:userid`: Retrieve user information by ID.
+- `GET /api/users/id/:id`: Retrieve user information by ID.
 - `GET /api/users`: Retrieve a list of all users.
-- `PUT /api/users/:userid`: Update user information by ID.
-- `DELETE /api/users/:userid`: Delete user by ID.
-- `POST /api/users/imsafe/:relationship`: Mark user as safe and send custom email.
+- `PUT /api/users//update/:id`: Update user information by ID.
+- `DELETE /api/users/delete/:id`: Delete user by ID.
+
 
 ### SOS Routes
 
@@ -33,13 +33,11 @@ The Cycling SOS App is designed to provide safety features for cyclists, allowin
 
 ### Custom Messages Routes
 
-- `POST /api/custom-messages`: Add a new custom message.
-- `PUT /api/custom-messages/:messageid`: Update custom message by ID.
-- `DELETE /api/custom-messages/:messageid`: Delete custom message by ID.
+- `POST /api/imsafe:/relationship`: Send a custom email to your favorite people while cycling.
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/cycling-sos-app.git`
+1. Clone the repository: `git clone https://github.com/adarsh-2425/cycling-safe.git`
 2. Install dependencies: `npm install`
 3. Set environment variables: Create a `.env` file with necessary configurations.
 

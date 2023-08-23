@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
 
-//getuserbyid
-router.get('/:id', userController.getUserById);
-
 // get all users
-router.get('/all', userController.getAllUsers);
+router.get('/', userController.getAllUsers);
+
+//getuserbyid
+router.get('id/:id', userController.getUserById);
 
 // update user
 router.put('/update/:id', userController.updateUserById)

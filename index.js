@@ -19,7 +19,7 @@ app.use('/api/auth', authRoute);
 
 // User Management Route
 const userRoute = require('./routes/userRoute');
-app.use('/api/user', userRoute);
+app.use('/api/users', userRoute);
 
 // sos route
 const sosRoute = require('./routes/sosRoute');
