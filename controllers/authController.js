@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const authMiddleware = require('../middlewares/authMiddleware');
+const transporter = require('../middlewares/emailMiddleware');
 
 //signup
 exports.signup = async (req, res) => {
@@ -32,7 +33,20 @@ exports.signup = async (req, res) => {
     res.status(201).send('New User Registered Successfully');
 
     //send email confirmation
-    authMiddleware.signupSuccess(name, email);
+    const mailOptions = {
+    from: '"Cycle Safe" <' + process.env.email + '>',
+    to: email,
+    subject: "Account Created Successfully",
+    text: `Hi ${name}. Welcome to Cycle Safe. Lets empower you with SOS and Peace of Mind.`
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log("Error sending email: ", error);
+    } else {
+      console.log("Email sent: ", info.response);
+    }
+  });
     
     } catch (err) {
     res.status(500).send('Problem with signup');
