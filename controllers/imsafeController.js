@@ -24,7 +24,7 @@ exports.imsafe = async (req, res) => {
       from: '"Cycle Safe" <' + process.env.email + '>',
       to: customMessage.email, 
       subject: 'I\'m Safe!',
-      text: `Hi ${customMessage.name},\nI just wanted to let you know that I'm safe and sound. ${customMessage.content}\n\nLove,\n${user.name} \n\n\nSend with care from Cycle Safe App.`
+      text: `Hi ${customMessage.name},\nI just wanted to let you know that I'm safe and sound. ${customMessage.content}\n\nBy,\n${user.name} \n\n\nSend with care from Cycle Safe App.`
     };
 
   transporter.sendMail(mailOptions, (error, info) => {
