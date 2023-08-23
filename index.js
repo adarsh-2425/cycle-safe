@@ -15,7 +15,11 @@ app.use(express.urlencoded({ extended: false }));
 
 //auth route
 const authRoute = require('./routes/authRoute');
-app.use('/auth', authRoute)
+app.use('/api/auth', authRoute);
+
+// sos route
+const sosRoute = require('./routes/sosRoute');
+app.use('/api', sosRoute);
 
 //error handling middleware
 app.use((err, req, res, next) => {

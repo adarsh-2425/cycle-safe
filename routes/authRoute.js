@@ -1,6 +1,5 @@
 //two routes
-//signin and signup
-//use nodemailer to send when signin and signup happens
+//signin and signups
 const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/authController');
@@ -10,5 +9,6 @@ router.post('/signup', authController.signup);
 
 //signin route
 router.post('/signin', authController.signin);
+
 
 module.exports = router;
