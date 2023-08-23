@@ -17,6 +17,10 @@ app.use(express.urlencoded({ extended: false }));
 const authRoute = require('./routes/authRoute');
 app.use('/api/auth', authRoute);
 
+// User Management Route
+const userRoute = require('./routes/userRoute');
+app.use('/api/user', userRoute);
+
 // sos route
 const sosRoute = require('./routes/sosRoute');
 app.use('/api', sosRoute);

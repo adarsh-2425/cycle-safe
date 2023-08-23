@@ -15,7 +15,7 @@ exports.sos = async (req, res) => {
       longitude: 76.6413
     }
 
-    const helpMessage = `SOS! I need help at: Latitude ${userLocation.latitude}, Longitude ${userLocation.longitude}.`;
+    const helpMessage = `SOS! I'm ${user.name}. I need help at: Latitude ${userLocation.latitude}, Longitude ${userLocation.longitude}.`;
 
     const twilioClient = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
