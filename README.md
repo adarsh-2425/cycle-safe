@@ -32,7 +32,7 @@ The Cycling Safe SOS API is designed to provide safety features for cyclists, al
 ### SOS Routes
 
 - `POST /api/sos`: Send SOS messages to emergency contacts.
-- 
+
 Screenshot
 ![Home](https://github.com/adarsh-2425/cycle-safe/blob/main/public/screenshots/photo_2023-08-26_12-02-41.jpg)
 
