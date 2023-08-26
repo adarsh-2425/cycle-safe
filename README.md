@@ -27,6 +27,8 @@ The Cycling Safe SOS API is designed to provide safety features for cyclists, al
 - `DELETE /api/users/delete/:id`: Delete user by ID.
 
 
+## Dont FORGET to use jwt token on Authorization header while using the SOS Route and Custom Messages Route. You will get jwt token immediately after signin.
+
 ### SOS Routes
 
 - `POST /api/sos`: Send SOS messages to emergency contacts.
