@@ -34,16 +34,16 @@ The Cycling Safe SOS API is designed to provide safety features for cyclists, al
 - `POST /api/sos`: Send SOS messages to emergency contacts.
 - 
 Screenshot
-![Home](https://github.com/adarsh-2425/space-education-api/blob/main/public/space-api-home.png)
+![Home](https://github.com/adarsh-2425/cycle-safe/blob/main/public/screenshots/photo_2023-08-26_12-02-41.jpg)
 
 ### Custom Messages Routes
 
 - `POST /api/imsafe:/relationship`: Send a custom email to your favorite people while cycling.
 
 Screenshot
-![Home](https://github.com/adarsh-2425/space-education-api/blob/main/public/space-api-home.png)
+![Home](https://github.com/adarsh-2425/cycle-safe/blob/main/public/screenshots/Screenshot%20from%202023-08-26%2011-56-33.png)
 
-![Home](https://github.com/adarsh-2425/space-education-api/blob/main/public/space-api-home.png)
+![Home](https://github.com/adarsh-2425/cycle-safe/blob/main/public/screenshots/Screenshot%20from%202023-08-26%2011-58-45.png)
 
 ## Installation
 
