@@ -1,8 +1,8 @@
-# Cycling Safe SOS App Documentation
+# Cycling Safe SOS API Documentation
 
 ## Overview
 
-The Cycling Safe SOS App is designed to provide safety features for cyclists, allowing them to send SOS messages and handcrafted 'im safe' messages to their favorite people. The backend of the app is built using Node.js, Express, MongoDB, Twilio for SMS functionality and NodeMailer for email functionality.
+The Cycling Safe SOS API is designed to provide safety features for cyclists, allowing them to send SOS messages and handcrafted 'im safe' messages to their favorite people. The backend of the API is built using Node.js, Express, MongoDB, Twilio for SMS functionality and NodeMailer for email functionality.
 
 ## Features
 
@@ -16,14 +16,14 @@ The Cycling Safe SOS App is designed to provide safety features for cyclists, al
 
 ### Authentication Routes
 
-- `POST /api/signup`: Register a new user.
-- `POST /api/signin`: Authenticate user and generate JWT token.
+- `POST /api/auth/signup`: Register a new user.
+- `POST /api/auth/signin`: Authenticate user and generate JWT token.
 
 ### User Routes
 
 - `GET /api/users/id/:id`: Retrieve user information by ID.
 - `GET /api/users`: Retrieve a list of all users.
-- `PUT /api/users//update/:id`: Update user information by ID.
+- `PUT /api/users/update/:id`: Update user information by ID.
 - `DELETE /api/users/delete/:id`: Delete user by ID.
 
 
